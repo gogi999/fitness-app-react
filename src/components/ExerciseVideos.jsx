@@ -1,10 +1,18 @@
 import React from 'react';
+import { Box, Stack, Typography } from '@mui/material';
 
-const ExerciseVideos = () => {
+const ExerciseVideos = ({ exerciseVideos, name }) => {
     return (
-        <div>
-        
-        </div>
+        <Box
+            sx={{
+                marginTop: { lg: "200px", xs: "20px" },
+                p: "20px"
+            }}
+        >
+            <Typography variant="h4" mb="33px">
+                Watch <span style={{ color: '#FF2625', textTransform: 'capitalize' }}>{name}</span> exercise videos
+            </Typography>
+        </Box>
     );
 }
 
